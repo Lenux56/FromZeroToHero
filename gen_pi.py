@@ -42,7 +42,8 @@ def check_input():
                 break
         except TypeError:
             print('The input is wrong, please try again')
-            continue
+        except:
+            print('The input is wrong, please try again')
     return digits
 
 print(gen_pi(check_input()))

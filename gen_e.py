@@ -26,7 +26,7 @@ def check_input():
                 continue
             else:
                 break
-        except TypeError:
+        except:
             print('The input is wrong, please try again')
             continue
     return digits
