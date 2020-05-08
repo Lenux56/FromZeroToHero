@@ -40,7 +40,7 @@ def check_input():
                 continue
             else:
                 break
-        except:
+        except TypeError:
             print('The input is wrong, please try again')
             continue
     return digits

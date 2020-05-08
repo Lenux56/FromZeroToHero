@@ -45,7 +45,7 @@ def convert(number, system):
 try:
     convert(int(input('Please enter number to convert ')),
             input("Please enter system to convert ('bin' or 'dec') "))
-except:
+except TypeError:
     print('Try again, number is integer')
     convert(int(input('Please enter number to convert ')),
             input("Please enter system to convert ('bin' or 'dec') "))
