@@ -1,6 +1,7 @@
 '''
 some task for text polindrom and reverse
 '''
+import re
 
 def reverse_str():
     '''
@@ -15,4 +16,5 @@ def polindrom_str():
     That is that it reads the same forwards as backwards like “racecar”
     '''
     in_str = input('Please, write a string for check it as polindrom: ').lower()
-    print(in_str.replace(' ', '') == in_str[::-1].replace(' ', ''))
+    alpha_str = re.sub('[^\w]', '', in_str)
+    print(alpha_str[:len(alpha_str)//2] == alpha_str[:len(alpha_str)//2:-1])
